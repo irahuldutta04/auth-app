@@ -26,7 +26,7 @@ export default function Login() {
       );
       localStorage.setItem("token", data.token);
       alert("Login successful");
-      window.location.href = "/profile";
+      router.push("/profile");
     } catch (error) {
       alert("Invalid OTP");
     }
